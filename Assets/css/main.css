@@ -1,0 +1,118 @@
+:root {
+    --cor-azul-escuro: 23, 23, 46;
+    --cor-preto: 2, 2, 3;
+    --cor-verde: 106, 180, 45;
+    --cor-ciano: 40, 181, 184;
+}
+
+
+  
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(var(--cor-verde)) rgb(var(--cor-preto));
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 6px
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 2px
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--ibr-gray-dark));
+    border-radius: 10px;
+    height: 4px
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.bg-header {
+    background: rgba(153, 153, 153, 0.647);
+    backdrop-filter: blur(10.7px);
+}
+
+.bg-verde {
+    background-color: rgba(var(--cor-verde),var(--bs-bg-opacity))!important;
+}
+
+.bg-preto {
+    background-color: rgba(var(--cor-preto),var(--bs-bg-opacity))!important;
+}
+
+.bg-azul-escuro {
+    background-color: rgba(var(--cor-azul-escuro),var(--bs-bg-opacity))!important;
+}
+
+.bg-ciano {
+    background-color: rgba(var(--cor-ciano),var(--bs-bg-opacity))!important;
+}
+
+.text-verde {
+    --bs-text-opacity: 1;
+    color: rgba(var(--cor-verde),var(--bs-text-opacity))!important;
+}
+
+.text-azul-escuro {
+    --bs-text-opacity: 1;
+    color: rgba(var(--cor-azul-escuro),var(--bs-text-opacity))!important;
+}
+
+.bg-gradiente {
+    
+    background: linear-gradient(180deg, rgb(var(--cor-azul-escuro)) 0%, rgb(var(--cor-preto)) 100%);
+}
+
+.btn-azul-escuro {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: rgb(var(--cor-azul-escuro));
+    --bs-btn-border-color: rgb(var(--cor-azul-escuro));
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg:  rgb(var(--cor-ciano));
+    --bs-btn-hover-border-color: rgb(var(--cor-ciano));
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: rgb(var(--cor-ciano));
+    --bs-btn-active-border-color: rgb(var(--cor-ciano));
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: rgba(var(--cor-azul-escuro),0.5);
+    --bs-btn-disabled-border-color: rgba(var(--cor-azul-escuro),0.5);
+}
+
+.quem-somos-svg {
+    max-height: 200px;
+}
+
+.pilar-svg {
+    width: 100px;
+    height: 100px;
+}
+
+.card-pilar {
+    transition: 200ms;
+}
+
+.links-contatos a {
+    width: fit-content;
+}
+
+@media screen and (min-width: 992px){
+    .quem-somos-svg {
+        max-height: unset;
+    }
+
+    .card-pilar:hover {
+        transform: translateY(-10px) !important;
+    }
+}

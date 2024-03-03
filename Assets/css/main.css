@@ -32,6 +32,11 @@ html {
 
 body {
     font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100vw;
 }
 
 .bg-header {
@@ -132,6 +137,35 @@ body {
     width: fit-content;
 }
 
+.hexagon-svg img{
+    top: -40%;
+    transform: rotate(90deg);
+}
+
+.card-ecossistema {
+    background: linear-gradient(90deg, rgb(var(--cor-azul-escuro)) 0%, rgba(var(--cor-azul-escuro),0) 100%);
+}
+
+.form-floating>.form-control-plaintext~label::after, .form-floating>.form-control:focus~label::after,
+ .form-floating>.form-control:not(:placeholder-shown)~label::after, .form-floating>.form-select~label::after {
+    content: none;
+}
+
+.form-control::-webkit-inner-spin-button,
+.form-control::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-control {
+    -moz-appearance: textfield;
+}
+
+.form-block {
+    height: 120%;
+    top: -10%;
+}
+
 @media screen and (min-width: 992px){
     .quem-somos-svg {
         max-height: unset;
@@ -139,6 +173,16 @@ body {
 
     .card-pilar:hover {
         transform: translateY(-10px) !important;
+    }
+
+    .hexagon-svg img{
+        top: -20%;
+        transform: rotate(0deg);
+        height: 150%;
+    }
+    
+    .animation-block {
+        width: 75%;
     }
 }
 

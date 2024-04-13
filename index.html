@@ -22,10 +22,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-header fixed-top">
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg bg-header ">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/" title="Fixer - Home">
                     <svg width="110" height="50" viewBox="0 0 145 60" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="d-block mx-auto mx-md-0">
                         <g clip-path="url(#clip0_34_18)">
@@ -40,52 +40,69 @@
                         </defs>
                     </svg>
                 </a>
-                <a href="#contato" class="btn btn-azul-escuro px-4 fw-bold rounded-0">Contato</a>
-                <!--<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 24C5 23.7348 5.10536 23.4804 5.29289 23.2929C5.48043 23.1054 5.73478 23 6 23H26C26.2652 23 26.5196 23.1054 26.7071 23.2929C26.8946 23.4804 27 23.7348 27 24C27 24.2652 26.8946 24.5196 26.7071 24.7071C26.5196 24.8946 26.2652 25 26 25H6C5.73478 25 5.48043 24.8946 5.29289 24.7071C5.10536 24.5196 5 24.2652 5 24ZM11 16C11 15.7348 11.1054 15.4804 11.2929 15.2929C11.4804 15.1054 11.7348 15 12 15H26C26.2652 15 26.5196 15.1054 26.7071 15.2929C26.8946 15.4804 27 15.7348 27 16C27 16.2652 26.8946 16.5196 26.7071 16.7071C26.5196 16.8946 26.2652 17 26 17H12C11.7348 17 11.4804 16.8946 11.2929 16.7071C11.1054 16.5196 11 16.2652 11 16ZM5 8C5 7.73478 5.10536 7.48043 5.29289 7.29289C5.48043 7.10536 5.73478 7 6 7H26C26.2652 7 26.5196 7.10536 26.7071 7.29289C26.8946 7.48043 27 7.73478 27 8C27 8.26522 26.8946 8.51957 26.7071 8.70711C26.5196 8.89464 26.2652 9 26 9H6C5.73478 9 5.48043 8.89464 5.29289 8.70711C5.10536 8.51957 5 8.26522 5 8Z" fill="white"/>
+                    </svg>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                <div class="offcanvas offcanvas-end w-100 bg-azul-escuro bg-opacity-100" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <div class="offcanvas-header justify-content-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.29204 5.70801C4.19907 5.61504 4.12531 5.50466 4.075 5.38318C4.02468 5.2617 3.99878 5.1315 3.99878 5.00001C3.99878 4.86852 4.02468 4.73832 4.075 4.61685C4.12531 4.49537 4.19907 4.38499 4.29204 4.29201C4.38502 4.19904 4.4954 4.12528 4.61688 4.07497C4.73835 4.02465 4.86855 3.99875 5.00004 3.99875C5.13153 3.99875 5.26173 4.02465 5.38321 4.07497C5.50469 4.12528 5.61507 4.19904 5.70804 4.29201L16 14.586L26.292 4.29201C26.385 4.19904 26.4954 4.12528 26.6169 4.07497C26.7384 4.02465 26.8686 3.99875 27 3.99875C27.1315 3.99875 27.2617 4.02465 27.3832 4.07497C27.5047 4.12528 27.6151 4.19904 27.708 4.29201C27.801 4.38499 27.8748 4.49537 27.9251 4.61685C27.9754 4.73832 28.0013 4.86852 28.0013 5.00001C28.0013 5.1315 27.9754 5.2617 27.9251 5.38318C27.8748 5.50466 27.801 5.61504 27.708 5.70801L17.414 16L27.708 26.292C27.801 26.385 27.8748 26.4954 27.9251 26.6168C27.9754 26.7383 28.0013 26.8685 28.0013 27C28.0013 27.1315 27.9754 27.2617 27.9251 27.3832C27.8748 27.5047 27.801 27.615 27.708 27.708C27.6151 27.801 27.5047 27.8747 27.3832 27.9251C27.2617 27.9754 27.1315 28.0013 27 28.0013C26.8686 28.0013 26.7384 27.9754 26.6169 27.9251C26.4954 27.8747 26.385 27.801 26.292 27.708L16 17.414L5.70804 27.708C5.61507 27.801 5.50469 27.8747 5.38321 27.9251C5.26173 27.9754 5.13153 28.0013 5.00004 28.0013C4.86855 28.0013 4.73835 27.9754 4.61688 27.9251C4.4954 27.8747 4.38502 27.801 4.29204 27.708C4.19907 27.615 4.12531 27.5047 4.075 27.3832C4.02468 27.2617 3.99878 27.1315 3.99878 27C3.99878 26.8685 4.02468 26.7383 4.075 26.6168C4.12531 26.4954 4.19907 26.385 4.29204 26.292L14.586 16L4.29204 5.70801Z" fill="white"/>
+                            </svg>
+                        </button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <ul class="navbar-nav justify-content-center justify-content-lg-end align-items-center flex-grow-1 h-100 gap-3 gap-lg-4 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link fw-semibold position-relative nivel-1" href="#sobre-nos" title="Sobre nós">Sobre nós</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link fw-semibold position-relative nivel-1" href="#tecnologias" title="Tecnologias">Tecnologias</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold position-relative nivel-1" href="#solucao" title="Solução">Solução</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold position-relative nivel-1" href="#ecossistema" title="Ecossistema">Ecossistema</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contato" class="btn btn-azul-escuro px-4 fw-bold rounded-0" title="Contato">Contato</a>
                             </li>
                         </ul>
-                      
                     </div>
-                </div>-->
+                </div>
             </div>
         </nav>
     </header>
-    <main>
-        <section class="quem-somos mt-5 py-5 overflow-hidden">
+    <main class="">
+        <section class="banner">
+            <div class="position-relative">
+                <picture>
+                    <source srcset="Assets/img/banner-mobile.webp" media="(max-width: 600px)" type="image/webp">
+                    <source srcset="Assets/img/banner-mobile.png" media="(max-width: 600px)">
+                    <source srcset="Assets/img/banner-medium.webp" media="(max-width: 992px)" type="image/webp">
+                    <source srcset="Assets/img/banner-medium.png" media="(max-width: 992px)">
+                    <source srcset="Assets/img/banner-desktop.webp" type="image/webp">
+                    <img src="Assets/img/banner-desktop.png" class="img-fluid w-100" alt="Fotografia de poste de rede eletrica com fiação mal organizada"
+                     title="Sustentabilidade em compartilhamento de infraestutura em postes.">
+                </picture>
+                <div class="position-absolute w-100 h-100 d-flex align-items-center top-0" data-aos="fade-right">
+                    <div class="text-box bg-verde bg-opacity-100 p-2 ps-5 col-11 col-sm-8 col-md-7 col-lg-6 col-xl-5">
+                        <h1 class="fw-bold text-white lh-sm ms-lg-4">sustentabilidade em compartilhamento de infraestutura em postes.</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quem-somos mt-5 py-5 overflow-hidden" id="sobre-nos">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12 col-md-10 col-lg-6 fw-bold ms-lg-5 order-lg-1">
-                        <h1 class="display-5 fw-bolder text-azul-escuro mb-4" data-aos="zoom-out">
+                        <h2 class="display-5 fw-bolder text-azul-escuro mb-4" data-aos="zoom-out">
                             modelo de negócio
                             <span class="text-verde">inovador</span> e <span class="text-verde">disruptivo</span>
                         </h1>
@@ -101,7 +118,7 @@
                     </div>
                     <div class="col-12 col-md-10 col-lg-5">
                         <div class="quem-somos-svg">
-                            <img src="Assets/img/Frame.svg" class="img-fluid">
+                            <img src="Assets/img/Frame.svg" class="img-fluid" alt="arte de identidade visual Fixer composta por blocos isometricos" title="Arte Identidade Visual">
                         </div>
                     </div>
                 </div>
@@ -109,14 +126,14 @@
         </section>
 
         <div class="bg-gradiente py-5">
-            <section>
+            <section id="tecnologias">
                 <div class="container-md">
                     <div class="row justify-content-center">
                         <div clas="col-12 fw-bold">
                             <h2 class="fs-2 text-white fw-bolder text-center my-5" data-aos="zoom-out">uma plataforma que contempla</h2>
                         </div>
-                        <div class="col-12 col-sm-8 col-md-7 col-lg-4 mb-3">
-                            <div class="card text-bg-light mb-3 rounded-0 h-100 card-pilar" data-aos="zoom-out">
+                        <div class="col-12 col-sm-8 col-md-9 col-lg-4 mb-3">
+                            <div class="card text-bg-light mb-3 rounded-0 h-100 card-pilar z-3" data-aos="zoom-out">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <div class="d-flex gap-3 align-items-center fw-bold mb-5">
                                         <div class="pilar-svg bg-ciano bg-opacity-100 p-3 d-flex align-items-center justify-content-center">
@@ -149,8 +166,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-8 col-md-7 col-lg-4 mb-3">
-                            <div class="card text-bg-light mb-3 rounded-0 h-100 card-pilar" data-aos="zoom-out" data-aos-delay="50">
+                        <div class="col-12 col-sm-8 col-md-9 col-lg-4 mb-3">
+                            <div class="card text-bg-light mb-3 rounded-0 h-100 card-pilar z-3" data-aos="zoom-out" data-aos-delay="50">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <div class="d-flex gap-3 align-items-center fw-bold mb-5">
                                         <div class="pilar-svg bg-ciano bg-opacity-100 p-3 d-flex align-items-center justify-content-center">
@@ -183,8 +200,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-8 col-md-7 col-lg-4 mb-3">
-                            <div class="card text-bg-light mb-3 rounded-0 h-100 card-pilar" data-aos="zoom-out" data-aos-delay="100">
+                        <div class="col-12 col-sm-8 col-md-9 col-lg-4 mb-3">
+                            <div class="card text-bg-light mb-3 rounded-0 h-100 card-pilar z-3" data-aos="zoom-out" data-aos-delay="100">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <div class="d-flex gap-3 align-items-center fw-bold mb-5">
                                         <div class="pilar-svg bg-ciano bg-opacity-100 p-3 d-flex align-items-center justify-content-center">
@@ -208,12 +225,290 @@
                 </div>
                 
             </section>
+
+            <section class="material py-5 my-5 position-relative">
+                <div class="hexagon-svg overflow-x-hidden"><img src="Assets/img/Hexagon.svg" class="img-fluid position-absolute" alt="Hexagonos representando estrutura do grafeno" title="Grafeno"></div>
+                <div class="container">
+                    <div class="row justify-content-end pt-5 mt-5">
+                        <div class="col-lg-6 my-5">
+                            <div class="fw-bold">
+                                <p class="text-light m-0" data-aos="zoom-out">uma família de hardware </p>
+                                <h2 class="text-ciano fw-bolder fs-1" data-aos="zoom-out">Fixer Dispositivos</h2>
+                                <p class="text-light fw-bolder fs-2" data-aos="zoom-out">
+                                    desenvolvidos na mais alta tecnologia em grafeno com o apoio da UCSGRAPHENE
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dispositivo my-5 py-5" id="solucao">
+                <div class="container-md">
+                    <div class="row justify-content-center justify-content-xl-between">
+                        <div class="col-xl-3 col-md-8 col-12 mb-5">
+                            <div class="fw-bold mb-5" data-aos="zoom-out">
+                                <h2 class="fs-2 fw-bolder text-light">
+                                    Modelo de negócio
+                                </h2>
+                                <p class="fs-5 fw-semibold text-light">
+                                    Compartilhamento de dispositivos por ocupantes.
+                                </p>
+                            </div>
+                            <div class="mb-4" data-aos="zoom-out">
+                                <h3 class="fs-5 fw-bold text-light">
+                                    ISP - B2B
+                                </h3>
+                                <p class="fs-6 fw-normal text-light">
+                                    Ocupantes passam a compartilhar um único dispositivo.
+                                </p>
+                            </div>
+                            <div class="mb-4" data-aos="zoom-out">
+                                <h3 class="fs-5 fw-bold text-light">
+                                    Municípios - B2G
+                                </h3>
+                                <p class="fs-6 fw-normal text-light">
+                                    Resolvem o problema de insegurança e poluição visual.
+                                </p>
+                            </div>
+                            <div data-aos="zoom-out">
+                                <h3 class="fs-5 fw-bold text-light">
+                                    Concessionárias de energia - B2B
+                                </h3>
+                                <p class="fs-6 fw-normal text-light">
+                                    Resolvem o problema da gestão dos postes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-8 col-12 mb-5 position-relative">
+                            <div id="animation-01" class="animation-block mx-auto position-sticky top-0" data-aos="fade" data-aos-delay="100"></div>
+                        </div>
+                        <div class="col-xl-3 col-md-8 col-12 mb-5">
+                            <div class="fw-bold mb-5" data-aos="zoom-out">
+                                <h2 class="fs-2 fw-bolder text-light">
+                                    Produtos e serviços
+                                </h2>
+                                <p class="fs-5 fw-semibold text-light">
+                                    Somos uma plataforma de governança em compartilhamento de estruturas.
+                                </p>
+                            </div>
+                            <div class="mb-4" data-aos="zoom-out">
+                                <h3 class="fs-5 fw-bold text-light">
+                                    Dispositivos Fixer
+                                </h3>
+                                <p class="fs-6 fw-normal text-light">
+                                    Os Dispositivos Fixer revolucionam a infraestrutura urbana
+                                    ao oferecer uma solução inovadora e sustentável para o 
+                                    emaranhado de cabos de telecomunicações.
+                                </p>
+                            </div>
+                            <div class="mb-4" data-aos="zoom-out">
+                                <h3 class="fs-5 fw-bold text-light">
+                                    Governanças
+                                </h3>
+                                <p class="fs-6 fw-normal text-light">
+                                    A Fixer desempenha um papel crucial na redefinição da governança
+                                    urbana de infraestrutura de telecomunicações, implementando 
+                                    uma gestão eficiente e ordenada dos fios nos postes.
+                                </p>
+                            </div>
+                            <div data-aos="zoom-out">
+                                <h3 class="fs-5 fw-bold text-light">
+                                    FixerApp
+                                </h3>
+                                <p class="fs-6 fw-normal text-light">
+                                    O FixerApp surge como uma plataforma digital 
+                                    revolucionária, destinada a automatizar e otimizar 
+                                    a gestão dos processos de governança da Fixer. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ecossistema my-5 py-5" id="ecossistema">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 fw-bold mb-5">
+                            <h2 class="fs-2 fw-bolder text-light d-flex align-items-center gap-3" data-aos="zoom-out" data-aos-delay="100">
+                                <svg width="100" height="119" viewBox="0 0 100 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.747664 89.8268L0 30.4403L49.1589 0L99.2523 28.9463L100 88.3328L50.8411 118.96L0.747664 89.8268Z" fill="#D2D700"/>
+                                    <path d="M0 30.4402L49.1589 0L99.2523 28.9462L0 30.4402Z" fill="#F3E600"/>
+                                    <path d="M99.2523 28.9443L50.0934 59.3846L0 30.4383L99.2523 28.9443Z" fill="#F3E600"/>
+                                </svg>
+                                Ecossistema Fixer
+                            </h2>
+                        </div>
+                        <div class="col-12 col-sm-10 col-md-6 mb-3">
+                            <div class="card card-ecossistema rounded-0 border-0 h-100" data-aos="fade-up" data-aos-delay="100">
+                                <div class="card-body">
+                                    <h3 class="fs-5 fw-bold text-uppercase text-light">
+                                        Fixer Alliance
+                                    </h3>
+                                    <p class="fs-6 text-light mb-0">
+                                        É o nome da nossa empresa que promoverá a GOVERNANÇA do compartilhamento de infraestrutura em telecomunicações.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-10 col-md-6 mb-3">
+                            <div class="card card-ecossistema rounded-0 border-0 h-100" data-aos="fade-up" data-aos-delay="100">
+                                <div class="card-body">
+                                    <h3 class="fs-5 fw-bold text-uppercase text-light">
+                                        Fixer Members
+                                    </h3>
+                                    <p class="fs-6 text-light mb-0">
+                                        Nome dado a TODOS que participam da FIXER ALLIANCE.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-10 col-md-6 mb-3">
+                            <div class="card card-ecossistema rounded-0 border-0 h-100" data-aos="fade-up" data-aos-delay="100">
+                                <div class="card-body">
+                                    <h3 class="fs-5 fw-bold text-uppercase text-light">
+                                        Fixer Dispositivos
+                                    </h3>
+                                    <p class="fs-6 text-light mb-0">
+                                        É o equipamento (Hardware) que irá hospedar de 2 a 10 ocupantes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-10 col-md-6 mb-3">
+                            <div class="card card-ecossistema rounded-0 border-0 h-100" data-aos="fade-up" data-aos-delay="100">
+                                <div class="card-body">
+                                    <h3 class="fs-5 fw-bold text-uppercase text-light">
+                                        Fixer Âncora
+                                    </h3>
+                                    <p class="fs-6 text-light mb-0">
+                                        É o membro que possui o CONTRATO com a Concessionária de Energia Elétrica.
+                                        <br>Pode-se possuir mais de um Fixer Âncora por Fixer Cidade.       
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-10 col-md-6 mb-3">
+                            <div class="card card-ecossistema rounded-0 border-0 h-100" data-aos="fade-up" data-aos-delay="100">
+                                <div class="card-body">
+                                    <h3 class="fs-5 fw-bold text-uppercase text-light">
+                                        Fixer Partner
+                                    </h3>
+                                    <p class="fs-6 text-light mb-0">
+                                        É o membro que participa da Fixer Alliance Cidade como um ocupante.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-10 col-md-6 mb-3">
+                            <div class="card card-ecossistema rounded-0 border-0 h-100" data-aos="fade-up" data-aos-delay="100">
+                                <div class="card-body">
+                                    <h3 class="fs-5 fw-bold text-uppercase text-light">
+                                        Fixer Investidor
+                                    </h3>
+                                    <p class="fs-6 text-light mb-0">
+                                        É o membro que faz o investimento, instalação, manutenção 
+                                        e zeladoria dos Fixer Dispositivos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-10 col-md-6 mb-3">
+                            <div class="card card-ecossistema rounded-0 border-0 h-100" data-aos="fade-up" data-aos-delay="100">
+                                <div class="card-body">
+                                    <h3 class="fs-5 fw-bold text-uppercase text-light">
+                                        Fixer Alliance Cidade
+                                    </h3>
+                                    <p class="fs-6 text-light mb-0">
+                                        Aliança entre os MEMBROS locais (Ocupantes, Prestadores de Serviços,
+                                         Instituições Públicas,...). 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-10 col-md-6 mb-3">
+                            <div class="card card-ecossistema rounded-0 border-0 h-100" data-aos="fade-up" data-aos-delay="100">
+                                <div class="card-body">
+                                    <h3 class="fs-5 fw-bold text-uppercase text-light">
+                                        Fixer Prestador de Serviços
+                                    </h3>
+                                    <p class="fs-6 text-light mb-0">
+                                        Membros que participam da Fixer Alliance para executar a 
+                                        instalação do Fixer dispositivo, limpeza, reciclagem de 
+                                        residuos e/ou manutenção dos postes onde tivermos rede fixer.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+
+        <section class="equipe py-5 my-5 overflow-hidden">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-xl-7 col-lg-6 col-md-8">
+                        <div class="fw-bold">
+                            <p class="text-azul-escuro m-0 fw-bold" data-aos="zoom-out">nosso time </p>
+                            <h2 class="text-ciano fw-bolder display-5" data-aos="zoom-out">Quatro empreendedores</h2>
+                            <p class="text-azul-escuro fw-bolder fs-3 lh-sm" data-aos="zoom-out">
+                                e o desejo de mudar o jogo do <br>acesso à infraestrutura.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-5 col-lg-6 col-md-8">
+                        <div class="d-flex gap-3 mb-4">
+                            <div data-aos="zoom-out" data-aos-delay="150">
+                                <svg width="111" height="131" viewBox="0 0 111 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.823337 98.9184L0 33.5212L54.1344 0L109.298 31.876L110.121 97.2731L55.9869 131L0.823337 98.9184Z"
+                                        fill="black" />
+                                    <path d="M0 33.5212L54.1344 0L109.298 31.876L0 33.5212Z" fill="#17172E" />
+                                    <path d="M109.298 31.876L55.1636 65.3972L0 33.5212L109.298 31.876Z" fill="#17172E" />
+                                </svg>
+                            </div>
+                            <div data-aos="zoom-out" data-aos-delay="200">
+                                <svg width="111" height="131" viewBox="0 0 111 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.823337 98.9184L0 33.5212L54.1344 0L109.298 31.876L110.121 97.2731L55.9869 131L0.823337 98.9184Z"
+                                        fill="#F18D71" />
+                                    <path d="M0 33.5212L54.1344 0L109.298 31.876L0 33.5212Z" fill="#F5A291" />
+                                    <path d="M109.298 31.876L55.1636 65.3972L0 33.5212L109.298 31.876Z" fill="#F5A291" />
+                                </svg>
+                            </div>
+                            <div data-aos="zoom-out" data-aos-delay="250">
+                                <svg width="111" height="131" viewBox="0 0 111 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.823337 98.9184L0 33.5212L54.1344 0L109.298 31.876L110.121 97.2731L55.9869 131L0.823337 98.9184Z"
+                                        fill="#6AB42D" />
+                                    <path d="M0 33.5212L54.1344 0L109.298 31.876L0 33.5212Z" fill="#99C21D" />
+                                    <path d="M109.298 31.876L55.1636 65.3972L0 33.5212L109.298 31.876Z" fill="#99C21D" />
+                                </svg>
+                            </div>
+                            <div data-aos="zoom-out" data-aos-delay="300">
+                                <svg width="111" height="131" viewBox="0 0 111 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.823337 98.9184L0 33.5212L54.1344 0L109.298 31.876L110.121 97.2731L55.9869 131L0.823337 98.9184Z"
+                                        fill="#D2D700" />
+                                    <path d="M0 33.5212L54.1344 0L109.298 31.876L0 33.5212Z" fill="#F3E600" />
+                                    <path d="M109.298 31.876L55.1636 65.3972L0 33.5212L109.298 31.876Z" fill="#F3E600" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="fs-5 fw-normal m-0" data-aos="fade-up" data-aos-delay="50"><span class="fw-bolder">CEO</span> - Fabiano André Vergani</p>
+                            <p class="fs-5 fw-normal m-0" data-aos="fade-up" data-aos-delay="100"><span class="fw-bolder">COO</span> - Ivonei Dores Lopes</p>
+                            <p class="fs-5 fw-normal m-0" data-aos="fade-up" data-aos-delay="150"><span class="fw-bolder">CLO</span> - Andrea Rebechi de Abreu Fattori</p>
+                            <p class="fs-5 fw-normal m-0" data-aos="fade-up" data-aos-delay="200"><span class="fw-bolder">CTO</span> - Guilherme Varaschin Weiand</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
-        <section class="contato py-5 bg-verde bg-opacity-100" id="contato">
+        <section class="contato bg-verde bg-opacity-100" id="contato">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-6 fw-bold my-5">
+                    <div class="col-12 col-lg-6 fw-bold my-5 py-5">
                         <h2 class="fs-1 fw-bolder text-white" data-aos="zoom-out">
                             Fale conosco
                         </h2>
@@ -222,27 +517,59 @@
                         </p>
 
                         <div class="mt-5 links-contatos">
-                            <a href="tel:+5551995918303" class="d-flex gap-2 fs-4 align-items-center fw-normal text-decoration-none link-light link-opacity-50-hover mb-3" data-aos="fade-up">
+                            <a href="tel:+5551995918303" target="_blank" title="Telefone: (51) 99591-8303" class="d-flex gap-2 fs-4 align-items-center fw-normal text-decoration-none link-light link-opacity-50-hover mb-3" data-aos="fade-up">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
                                 </svg>
                                 (51) 99591-8303
-                                
                             </a>
 
-                            <!--<a href="tel:+55" class="d-flex gap-2 fs-4 align-items-center fw-normal text-decoration-none link-light link-opacity-50-hover mb-3" data-aos="fade-up">
+                           <a href="https://wa.me/5551995918303" target="_blank" title="WhatsApp: (51) 99591-8303" class="d-flex gap-2 fs-4 align-items-center fw-normal text-decoration-none link-light link-opacity-50-hover mb-3" data-aos="fade-up">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
                                     <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
                                   </svg>
-                                (54) 99999-9999
-                            </a>-->
+                                (51) 99591-8303
+                            </a>
 
-                            <a href="mailto:contanto@fixeralliance.com" class="d-flex gap-2 fs-4 align-items-center fw-normal text-decoration-none link-light link-opacity-50-hover mb-3" data-aos="fade-up">
+                            <a href="mailto:contanto@fixeralliance.com" target="_blank" title="E-mail: contanto@fixeralliance.com" class="d-flex gap-2 fs-4 align-items-center fw-normal text-decoration-none link-light link-opacity-50-hover mb-3" data-aos="fade-up">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                                     <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
                                   </svg>
                                   contanto@fixeralliance.com
                             </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 fw-bold d-none">
+                        <div class="form-block bg-azul-escuro bg-opacity-100 p-3 p-md-5 position-relative d-flex align-items-center w-100">
+                            <form action="https://formsubmit.co/contanto@fixeralliance.com" method="POST" class="w-100">
+                                <input type="hidden" name="_next" value="https://www.fixeralliance.com/confirmacao.html">
+                                <input type="hidden" name="_subject" value="Contato Fixer">
+                                <input type="hidden" name="_autoresponse" value="Recebemos seu contato! Retornaremos o mais breve possível.">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control bg-transparent border-0 border-bottom rounded-0 text-secondary" 
+                                    id="name" placeholder="nome" required name="nome">
+                                    <label for="name" class="bg-transparent text-light">Nome</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control bg-transparent border-0 border-bottom rounded-0 text-secondary"
+                                     id="email" placeholder="email@examplo.com" required name="email">
+                                    <label for="email" class="bg-transparent text-light">E-mail</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="tel" class="form-control bg-transparent border-0 border-bottom rounded-0 text-secondary"
+                                     id="phone" placeholder="99 99999-9999" maxlength="15" onkeyup="handlePhone(event)" required name="telefone">
+                                    <label for="phone" class="bg-transparent text-light">Telefone</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control bg-transparent border-0 border-bottom rounded-0 text-secondary"
+                                     placeholder="Deixe sua mensagem..." id="Mensagem" style="height: 100px" rows="6" name="mensagem"></textarea>
+                                    <label for="Mensagem" class="bg-transparent text-light">Mensagem</label>
+                                </div>
+                                
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-light px-5 py-2 rounded-0 fw-semibold">Enviar</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -273,12 +600,42 @@
             </div>
         </div>
     </footer>
+
+    <div class="fixed-social d-flex flex-column position-fixed top-50 end-0 translate-middle-y z-3">
+        <a class="p-2 d-flex justify-content-center align-items-center bg-ciano bg-opacity-100 link-light" target="_blank" 
+        href="https://www.instagram.com/fixer_infraestrutura/" title="Instagram Fixer" data-bs-toggle="tooltip" data-bs-title="Instagram Fixer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg>
+        </a>
+        <a class="p-2 d-flex justify-content-center align-items-center bg-ciano bg-opacity-100 link-light" target="_blank" 
+        href="https://wa.me/5551995918303" title="WhatsApp Fixer" data-bs-toggle="tooltip" data-bs-title="WhatsApp Fixer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            </svg>
+        </a>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.0/lottie.min.js" integrity="sha512-NbKgMv0o4r7P6qWzHvk9L4S7rQzZaccsgD52bffgInf0OCdDg45Ta8uBBKxAbIutsrM5TqB88DYp1EP0NePcdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+        var animation = bodymovin.loadAnimation({
+                container: document.getElementById('animation-01'),
+                path: 'Assets/img/Cubes.json',
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                name: "Cubes",
+            });
+
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
+
+    <script src="Assets/js/form.js"></script>
 </body>
 </html>
